@@ -1,8 +1,42 @@
-﻿@{
+﻿@using System.Web
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+<div class="jumbotron">
+    <h1>William(Fengsheng) Shu's Personal Website</h1>
+    <p class="lead">Detail-oriented, bilingual Software Engineer for requirements gathering, designing and developing applications. Excels at learning new technologies and using them to develop clean, well-structured code.</p>
+    <p><a href="https://asp.net" class="btn btn-outline-primary">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Why You Code?</h2>
+        <p>The best thing about coding is that I can always be correct. </p>
+        <p>Even if I am wrong (boolean false), I am only off by <strong>ONE BIT</strong>.</p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Then What You Can Do?  &raquo;"), "Index", "Home", new { area = "" }, new { @class = "btn btn-outline-primary" })</p>
+        <p><a class="btn btn-outline-primary" href="~/Resources/Resume_WILLIAM_SHU.pdf">Show Me Your Resume &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>What Else You Love?</h2>
+        <p>
+            I am an enthusiastic video gamer. At most time, I play <strong><a href="https://en.wikipedia.org/wiki/League_of_Legends">League of Legends</a></strong> and <strong><a href="https://en.wikipedia.org/wiki/PlayerUnknown%27s_Battlegrounds">PUBG</a></strong>. Some other time, I would try games that built on local server, such as Don't Starve Together and FIFA, etc.
+        </p>
+        <p>
+            Some travel, but definitely not nice photos from me. If you see any photos in this website, that's not me who took it.
+        </p>
+        <p><a class="btn btn-outline-primary" href="http://na.op.gg/summoner/userName=vfg+mandala">Check Out My League History Here &raquo;</a></p>
+        <p><a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=0gQ6PGxzrTk&t=10s">My Highlight of PUBG &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>What Are You Working On?</h2>
+        <p>I am working as an software engineer at Eyekor. At most time, I am working with ASP.NET Core and WPF. In my spare time, I will develop some small apps just like this website.</p>
+        <p><a class="btn btn-outline-primary" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn More About my Apps &raquo;</a></p>
+    </div>
+</div>
+
+@*<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -91,4 +125,4 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
         </ul>
     </div>
-</div>
+</div>*@
