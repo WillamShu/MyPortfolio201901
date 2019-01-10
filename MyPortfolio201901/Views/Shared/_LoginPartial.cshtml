@@ -11,7 +11,8 @@
             <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
         </li>
         <li class="nav-item active">
-            <button class="nav-link" type="submit">Logout</button>
+            <a class="nav-link" href="javascript:sessionStorage.removeItem('accessToken');$('#logoutForm').submit();">Log off</a>
+            @*<input class="nav-link" type="submit">Logout<input />*@
         </li>
     </ul>
 </form>
