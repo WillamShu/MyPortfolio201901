@@ -22,10 +22,10 @@ namespace MyPortfolio201901.Services
 
         public Task Execute(string apiKey, string subject, string message, string email)
         {
-            var client = new SendGridClient(apiKey);
+            var client = new SendGridClient("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");
             var msg = new SendGridMessage()
             {
-                From = new EmailAddress("myportfolio2019@outlook.com", "Will"),
+                From = new EmailAddress("williamshuuu@gmail.com", "Will"),
                 Subject = subject,
                 PlainTextContent = message,
                 HtmlContent = message
